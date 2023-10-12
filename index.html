@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .grid-container{
+      height: 748px;
+      width: 748px;
+      display: grid;
+      grid-template: 414px 130px 155px 22px / 320px 198px 153px 50px;
+      gap: 9px;
+      background-color: #000;
+    }
+
+    .flex-container{
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .White1{
+      background-color: #F0F1EC;
+      grid-column: span 3;
+    }
+    .White2{
+      background-color: #F0F1EC;
+      grid-row: span 2;
+    }
+    .White3{
+      background-color: #F0F1EC;
+      grid-area: 2 / 2 / 4 / 4;
+    }
+    .White4{
+      background-color: #F0F1EC;
+      grid-row: span 2;
+    }
+    .White5{
+      background-color: #F0F1EC;
+    }
+
+    .Red{
+      background-color: #E72F24;
+      grid-area: 1 / 1;
+    }
+    
+    .Black{
+      background-color: #232629;
+      grid-area: 4 / 3;
+    }
+    
+    .Blue{
+      background-color: #004592;
+      grid-area: 2 / 4;
+      border-bottom: 10px solid #000;
+    }
+    
+    .Yellow{
+      background-color: #F9D01E;
+      grid-area: 4 / 2;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="flex-container">
+    <div class="grid-container">
+      <div class="White1"></div>
+      <div class="White2"></div>
+      <div class="White3"></div>
+      <div class="White4"></div>
+      <div class="White5"></div>
+      <div class="Red"></div>
+      <div class="Black"></div>
+      <div class="Blue"></div>
+      <div class="Yellow"></div>
+    </div>
+  </div>
+  
+</body>
+
+</html>
